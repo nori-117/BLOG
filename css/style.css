@@ -1,0 +1,236 @@
+@charset "UTF-8";
+body {
+  color: #333333;
+  background-color: #e9e9e9;
+}
+
+/* 送信ボタン（safari用） */
+input[type=submit] {
+  -webkit-appearance: none;
+  border-radius: 5px;
+}
+
+/* ヘッダー */
+.l-header {
+  background-color: #3c26b6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.l-header__title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+}
+
+/* メイン */
+.l-main {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+.l-main__inner {
+  max-width: 800px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.l-main__heading {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ボタン */
+.c-button {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #009944;
+  box-shadow: 0 5px 0 #00662d;
+  border: none;
+}
+.c-button:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.c-button:active {
+  box-shadow: 0 1px 0 #00662d;
+  margin-top: 4px;
+  margin-bottom: -4px;
+}
+
+/* ボタン（小）：背景色指定が必要 */
+.c-small-button {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+.c-small-button:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+/* 見出し */
+.c-heading {
+  text-align: center;
+}
+
+/* エラーメッセージ */
+.c-error {
+  font-size: 14px;
+  color: #ee3939;
+  font-weight: bold;
+  padding-left: 5px;
+  margin-top: 5px;
+}
+
+/* リンク */
+.c-links {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.c-links a {
+  margin-left: 10px;
+}
+.c-links a:hover {
+  opacity: 0.7;
+}
+
+.p-signup, .p-login {
+  /* フォーム */
+  /* ボタン */
+  /* 新規登録リンク */
+}
+.p-signup__form, .p-login__form {
+  max-width: 400px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-signup__form input[type=text], .p-signup__form input[type=password], .p-login__form input[type=text], .p-login__form input[type=password] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 1px solid #b5b5b5;
+}
+.p-signup__button, .p-login__button {
+  text-align: center;
+  margin-top: 30px;
+}
+.p-signup__link, .p-login__link {
+  text-align: center;
+  margin-top: 50px;
+}
+.p-signup__link:hover, .p-login__link:hover {
+  opacity: 0.7;
+}
+
+.p-signup-done__link, .p-logout__link {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.p-main {
+  /* 表 */
+}
+.p-main__table {
+  padding: 15px 15px 30px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.p-main__table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.p-main__table th {
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b5b5b5;
+  width: calc(100% - 330px);
+}
+.p-main__table td {
+  border-bottom: 1px solid #b5b5b5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.p-main__table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+.p-main__table td:nth-child(3), .p-main__table td:nth-child(4), .p-main__table td:nth-child(5) {
+  width: 60px;
+  text-align: center;
+}
+.p-main__table .view-button {
+  background-color: #44ac73;
+}
+.p-main__table .edit-button {
+  background-color: #5d5d5d;
+}
+.p-main__table .delete-button {
+  background-color: #d51212;
+}
+
+.p-edit, .p-create {
+  /* フォーム */
+  /* 未入力メッセージ */
+}
+.p-edit__form input[type=text], .p-edit__form textarea, .p-create__form input[type=text], .p-create__form textarea {
+  width: 100%;
+  border: 1px solid #b5b5b5;
+  padding: 10px;
+  margin-top: 10px;
+}
+.p-edit__form input[type=text], .p-create__form input[type=text] {
+  font-size: 24px;
+}
+.p-edit__form .buttons, .p-create__form .buttons {
+  margin-top: 20px;
+}
+.p-edit__form .back-button, .p-create__form .back-button {
+  background-color: #5d5d5d;
+}
+.p-edit__form .update-button, .p-edit__form .create-button, .p-create__form .update-button, .p-create__form .create-button {
+  background-color: #009944;
+  margin-left: 10px;
+}
+.p-edit__message, .p-create__message {
+  margin-top: 10px;
+}
+.p-edit__message a:hover, .p-create__message a:hover {
+  opacity: 0.7;
+}
+
+.p-view {
+  /* コンテンツ */
+  /* リンク */
+}
+.p-view__content {
+  margin-top: 30px;
+  line-height: 1.8;
+  background-color: #fff;
+  padding: 30px 15px;
+}
+.p-view__link {
+  margin-top: 50px;
+  text-align: center;
+}
+.p-view__link a:hover {
+  opacity: 0.7;
+}
+/*# sourceMappingURL=style.css.map */
